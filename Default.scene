@@ -1,0 +1,242 @@
+Scene: Untitled
+Entities:
+  - Entity: 15835380227612130770
+    Name: Floor
+    TransformComponent:
+      Translation: [0, -0.5018103, 0]
+      Rotation: [0, -0, 0]
+      Scale: [117.115, 1, 128.444]
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      TexturePath: assets\photo-1515895309288-a3815ab7cf81 (1).jpg
+      TilingFactor: 1
+    RigidBodyComponent:
+      Type: 0
+      FixedRotation: false
+      Mass: 1
+      Friction: 0.5
+      RollingFriction: 0.1
+      SpinningFriction: 0.1
+      Restitution: 0
+    BoxColliderComponent:
+      Offset: [0, 0, 0]
+      Size: [1, 1, 1]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - Entity: 5941150821364652400
+    Name: Sun
+    TransformComponent:
+      Translation: [0, 6.200857, 0]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    LightComponent:
+      Type: 1
+      Color: [1, 1, 1]
+      Intensity: 1.6
+      Radius: 123.5
+  - Entity: 8386125009130510297
+    Name: Maxwell
+    TransformComponent:
+      Translation: [0, 3.5732298, -8.350855]
+      Rotation: [0, -0, 0]
+      Scale: [10, 10.5, 10]
+    RigidBodyComponent:
+      Type: 1
+      FixedRotation: true
+      Mass: 1
+      Friction: 0.5
+      RollingFriction: 0.1
+      SpinningFriction: 0.1
+      Restitution: 0
+    BoxColliderComponent:
+      Offset: [0, 0, 0]
+      Size: [1, 0.5781922, 0.56408185]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+    ScriptComponent:
+      Name: FloatingItem
+    MeshRendererComponent:
+      FilePath: assets\Maxwell the cat.obj
+      Color: [1, 1, 1, 1]
+      DiffusePath: assets\dingus.png
+      NormalPath: assets\dingus.png
+    AudioSourceComponent:
+      FilePath: assets\W_W-OIIA-OIIA-_Spinning-Cat_-W_W-_youtube_.wav
+      Volume: 0.28
+      Pitch: 1
+      Range: 100
+      Loop: true
+      PlayOnAwake: true
+      Spatial: true
+  - Entity: 14715059000333950461
+    Name: Player new
+    TransformComponent:
+      Translation: [0, 4.672284, 0]
+      Rotation: [0, -0, 0]
+      Scale: [1, 3.610914, 1]
+    RigidBodyComponent:
+      Type: 1
+      FixedRotation: true
+      Mass: 12.2
+      Friction: 0.5
+      RollingFriction: 0.1
+      SpinningFriction: 0.1
+      Restitution: 0
+    BoxColliderComponent:
+      Offset: [0, 0, 0]
+      Size: [1, 1, 1]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+    CameraComponent:
+      ProjectionType: 0
+      Primary: true
+      FixedAspectRatio: false
+      PerspectiveFOV: 75
+      PerspectiveNear: 0.01
+      PerspectiveFar: 1000
+      OrthographicSize: 10
+      OrthographicNear: -1
+      OrthographicFar: 1
+    ScriptComponent:
+      Name: PlayerController
+  - Entity: 17356400974757787508
+    Name: Kanye
+    TransformComponent:
+      Translation: [-9.421752e-05, 5.056626, 8.028936]
+      Rotation: [-3.1415908, -3.4031842e-08, -3.141156]
+      Scale: [7.9999437, 7.9999204, 0.099998586]
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      TexturePath: assets\images.jpg
+      TilingFactor: 1
+    RigidBodyComponent:
+      Type: 1
+      FixedRotation: true
+      Mass: 19.5
+      Friction: 0.5
+      RollingFriction: 0.1
+      SpinningFriction: 0.1
+      Restitution: 0
+    BoxColliderComponent:
+      Offset: [0, 0, 0]
+      Size: [1, 1, 0.1]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+    ScriptComponent:
+      Name: FollowPlayer
+    AudioSourceComponent:
+      FilePath: assets\All-Of-The-Lights-Kanye-West-_youtube_.wav
+      Volume: 0.66
+      Pitch: 10
+      Range: 100
+      Loop: true
+      PlayOnAwake: true
+      Spatial: true
+  - Entity: 6703212528722122710
+    Name: Empty Entity
+    TransformComponent:
+      Translation: [-58.05772, 2.428319, 0]
+      Rotation: [0, -0, 0]
+      Scale: [0.9999999, 5.3289666, 130.30237]
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      TilingFactor: 1
+    RigidBodyComponent:
+      Type: 0
+      FixedRotation: false
+      Mass: 1
+      Friction: 0.5
+      RollingFriction: 0.1
+      SpinningFriction: 0.1
+      Restitution: 0
+    BoxColliderComponent:
+      Offset: [0, 0, 0]
+      Size: [1, 1, 0.1]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - Entity: 5373590184049295429
+    Name: Empty Entity
+    TransformComponent:
+      Translation: [-0.71909165, -0.000114462826, -46.504227]
+      Rotation: [-3.1414335, 1.5553346, -3.1414335]
+      Scale: [1.0000231, 9.970054, 32.042202]
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      TilingFactor: 1
+    RigidBodyComponent:
+      Type: 0
+      FixedRotation: false
+      Mass: 1
+      Friction: 0.5
+      RollingFriction: 0.1
+      SpinningFriction: 0.1
+      Restitution: 0
+    BoxColliderComponent:
+      Offset: [0, 0, 0]
+      Size: [1, 1, 0.1]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - Entity: 8490262099513834898
+    Name: UI Canvas
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    RelationshipComponent:
+      Parent: 0
+      Children:
+        - 15308442609736310326
+        - 9535307429177941524
+        - 4211842674169285793
+        - 1525994592210682597
+    CanvasComponent:
+      Enabled: true
+      IsScreenSpace: true
+      IsPixelPerfect: false
+      SortingOrder: 0
+    RectTransformComponent:
+      AnchorsMin: [0.5, 0.5]
+      AnchorsMax: [0.5, 0.5]
+      Pivot: [0.5, 0.5]
+      Position: [0, 0]
+      SizeDelta: [1280, 720]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+  - Entity: 1525994592210682597
+    Name: UI Text
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    RelationshipComponent:
+      Parent: 8490262099513834898
+      Children:
+        []
+    RectTransformComponent:
+      AnchorsMin: [0.5, 0.5]
+      AnchorsMax: [0.5, 0.5]
+      Pivot: [0.5, 0.5]
+      Position: [-316, -230]
+      SizeDelta: [186, 58]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    TextComponent:
+      TextString: "FPS: 0"
+      Color: [0, 0, 0, 1]
+Gravity: [0, -13.51, 0]
+SkyColor: [0.1, 0.1, 0.1]
+AmbientColor: [1, 1, 1]
+AmbientIntensity: 0.3
+SkyTexturePath: assets\pexels-pixabay-53594.jpg
